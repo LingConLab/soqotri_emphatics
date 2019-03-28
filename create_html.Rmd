@@ -46,7 +46,7 @@ tibble(files) %>%
                            if(Sys.info()[1] == "Windows") "file:///",
                            picture_folder, files, '.png" style="width:10%" onclick="myFunction(this);">')) %>%
   select(-files) %>%
-  DT::datatable(filter = 'top', rownames = FALSE, options = list(pageLength = 50, dom = 'tip'), escape = FALSE)
+  DT::datatable(filter = 'top', rownames = FALSE, options = list(pageLength = 15, dom = 'tip'), escape = FALSE)
 ```
 
 <script>
